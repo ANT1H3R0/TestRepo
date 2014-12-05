@@ -54,6 +54,6 @@ console.log(combinedWalrusArray);
 
 
 //to see this working put this code into the document ready part of the boilerplate file
-//when you are done with this name it array.1.01.practice.js and commit it to the git repo you set up
-//if you dont' know how to do that or have any questions im tmrw when you're home and we'll run through it
+//when you are done with this name it array.1.01.practice.js and commit it(make sure to add a comment with -m "comment goes here") to the git repo you set up
+//if you don't know how to do that or have any questions im tmrw when you're home and we'll run through it
 

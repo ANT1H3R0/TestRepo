@@ -52,6 +52,18 @@ console.log(combinedWalrusArray);
 // 7 combine both arrays and print to the console with some text
 // 8 print something to the console using .reverse()
 
+var myArray = ["nyah", 72, "something else"];
+var anotherArray = ["bruh", 27, "pants"];
+console.log(myArray);
+console.log(anotherArray);
+console.log(myArray[0]);
+console.log("The thrid value in anotherArray is "+anotherArray[2]);
+console.log(myArray.length);
+console.log(anotherArray.length);
+anotherArray.push("shirt");
+var bothArrays = myArray.concat(anotherArray);
+console.log(anotherArray.reverse());
+
 
 //to see this working put this code into the document ready part of the boilerplate file
 //when you are done with this name it array.1.01.practice.js and commit it(make sure to add a comment with -m "comment goes here") to the git repo you set up

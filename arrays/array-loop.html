@@ -1,0 +1,57 @@
+<!--loading jQuery because it's awesome -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+//Here is the vanilla javascript way to do it
+var myStringArray = ["Hello", "World", "This", "is", "Some", "Sweet", "Array"];
+var arrayLength = myStringArray.length;
+for (var i = 0; i < arrayLength; i++) {
+    // alert(myStringArray[i]);
+    console.log(myStringArray[i])
+}
+
+// Here is the jQuery way to do it
+jQuery(document).ready(function($){
+	var jqueryArray = [ "one", "two", "three", "four", "five", 83 ];
+	$.each( jqueryArray, function(i) {
+		console.log(jqueryArray[i]);
+	});
+});
+</script>
+
+<!--load this page and check out the console -->
+
+<!--Alright so what are you supposed to do with this?  It seems like in most scripting projects you're almost always going to have an array or list of things that you need to build something with -->
+
+<!--I like jQuery because a lot of things are already done for you and it's easier to look at, so I'm going to use that for this example -->
+
+<!-- pretty simple, let's take an array and build a list on our page -->
+<script>
+jQuery(document).ready(function($){
+	var listArray = [ "beef", "cake", "string", "soap", "apple watch", "giraffe" ];
+	$.each( listArray, function(i, val) {
+		console.log(val);
+		var listItem = $("<li>" + listArray[i] + "</li>");
+		$("#the-list").append(listItem);
+	});
+});
+</script>
+<h1>A list</h1>
+<ul id="the-list">
+</ul>
+
+<!--
+So here is what I want you to do:
+build a list with some arrays but a little more complicated than above
+
+Here is what the markup should look like:
+<ul>
+	<li>
+		<div class="image"></div>
+		<a class="link"></a>
+		<p class="description"></p>
+	</li>
+</ul>
+
+create an array for the images, links, and descriptions. Make your list 5 items long so 5 <li>'s.  When you're done save the file as array.102.practice.html and push it to the newly created arrays dir in TestRepo.
+ -->
